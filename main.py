@@ -26,7 +26,7 @@ def main(folderLocal="D:/projects", folderTeam="Data"):
     folderProject = f.read()
     f.close()
 
-    scripts = ["presentation", "plot_preview", "wlc_fit", "make_all_figures", "select_project"]
+    scripts = ["wlc_fit", "presentation", "plot_preview", "make_all_figures", "select_project"]
     script = st.sidebar.selectbox("Select script", scripts, index=0)
 
     if script == "assign_all_region":
