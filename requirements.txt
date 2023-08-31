@@ -1,11 +1,11 @@
 pandas
+
 streamlit
 scipy
 seaborn==0.10.0
 statsmodels
 lmfit==1.0.1
 npTDMS==0.27.0
-scikit-image==0.16.2
 simplejson
 bokeh==2.0.0
 altair==4.1.0
