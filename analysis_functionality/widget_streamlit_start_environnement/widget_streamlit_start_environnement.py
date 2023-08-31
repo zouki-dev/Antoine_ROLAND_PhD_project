@@ -13,7 +13,6 @@ from analysis_functionality.python_list_output.parameters_save import parameters
 
 from analysis_functionality.widget_streamlit_start_environnement._0_load_inputs import load_inputs
 from analysis_functionality.widget_streamlit_start_environnement._1_read_all import read_all
-from streamlit import caching
 from analysis_functionality.tools.str_analysis import compact_file_name
 # from analysis_functionality.widget_streamlit_start_environnement.widget_streamlit_start_environnement import start_streamlit_environement
 # [labels, parameters] = start_streamlit_environement()
