@@ -17,7 +17,6 @@ from analysis_functionality.tools.streamlit_wide_mode import wide_mode
 from foldometer.ixo.lumicks_c_trap import process_lumicks_data
 from foldometer.analysis.region_classification import assign_regions
 from foldometer.analysis.wlc_curve_fit import protein_contour_length_accurate
-from streamlit import caching
 from copy import deepcopy
 from os import listdir
 import os
