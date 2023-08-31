@@ -6,7 +6,6 @@ from analysis_functionality.python_list_output.parameters_read import parameter_
 import os
 import pandas as pd
 from analysis_functionality.tools.csv_tools import make_the_dict, saveDataFrameOneRawToCsv
-from streamlit import caching
 import os
 
 def save_widget_output(allRawData, data, folderSave, labels, parameters):
