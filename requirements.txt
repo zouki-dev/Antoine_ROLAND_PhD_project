@@ -9,4 +9,3 @@ simplejson
 bokeh==2.0.0
 altair==4.1.0
 lumicks.pylake
-numpy
