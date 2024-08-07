@@ -20,6 +20,9 @@ import pandas as pd
 import numpy as np
 from copy import deepcopy
 import warnings
+import pkg_resources
+
+noiseFile = pkg_resources.resource_filename('foldometer', 'data/noise.dat')
 
 
 def calculate_psd_offset(psdData):
@@ -203,9 +206,14 @@ def surface_separation(displacement, trapSeparation, radii=(1050, 1050)):
 def remove_parasitic_noise(rawData, data, header):
     try:
         noiseFileName = 'data/' + str(header["fileName"][-34:-27], 'utf-8') + '_noise.dat'
-    except:
-        pass
 
+        noiseFile = pkg_resources.resource_filename('foldometer', noiseFileName)
+        noiseMetadata, noiseFit, noiseRawData, noiseBead = read_file(noiseFile)
+    except:
+        noiseFile = pkg_resources.resource_filename('foldometer', 'data/noise.dat')
+        noiseMetadata, noiseFit, noiseRawData, noiseBead = read_file(noiseFile)
+
+    print(noiseFile)
 
     offset = noiseFit["offset"]
 
