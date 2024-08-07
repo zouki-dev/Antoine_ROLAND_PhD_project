@@ -15,11 +15,13 @@ from foldometer.analysis.wlc_curve_fit import wlc, wlc_series, wlc_from_fit, wlc
 from foldometer.tools.misc import column_indexer, resample_data
 from scipy.signal import savgol_filter
 from scipy.signal import medfilt
+import pkg_resources
 
 sns.set_style("whitegrid")
 import scipy.spatial as spatial
 import copy
 
+sMBP_1300_DIG_BIOTIN_RULER = pkg_resources.resource_filename('foldometer', 'data/sMBP_ruler_1300_dig_biotin.txt')
 
 
 def event_info_display(meanSeparation, unfoldingData):
@@ -294,6 +296,7 @@ def force_extension_curve(data, unfoldingData=None, wlcData=None, axis="x", forc
                                                       wlcParameters["stretchModulusDNA"],
                                                       length, wlcParameters["persistenceLengthProtein"],
                                                       ), forceArray, color="gray")
+        #ruler = pd.read_csv(sMBP_1300_DIG_BIOTIN_RULER, sep="\t", decimal=",", dtype=float)
         #ruler = ruler.ix[ruler.iloc[:, 3] < 40, :]
         #ruler.iloc[:,[0, 1, 2]] *= 1e3
 
@@ -384,6 +387,7 @@ def force_extension_grid(data, **kwargs):
     else:
         plt.plot(separation, force, alpha=1, lw=5, color="red")
     #print(data.eventID)
+    ruler = pd.read_csv(sMBP_1300_DIG_BIOTIN_RULER, sep="\t", decimal=",", dtype=float)
     ruler = ruler.ix[ruler.iloc[:, 3] < 40, :]
     ruler.iloc[:,[0, 1, 2]] *= 1e3
 
