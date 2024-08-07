@@ -1,5 +1,5 @@
-pandas==1.23.0
-streamlit
+pandas
+streamlit==1.5.0
 scipy
 seaborn==0.10.0
 statsmodels
