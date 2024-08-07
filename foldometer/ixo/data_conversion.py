@@ -203,6 +203,8 @@ def surface_separation(displacement, trapSeparation, radii=(1050, 1050)):
 def remove_parasitic_noise(rawData, data, header):
     try:
         noiseFileName = 'data/' + str(header["fileName"][-34:-27], 'utf-8') + '_noise.dat'
+    except:
+        pass
 
 
     offset = noiseFit["offset"]
