@@ -1,11 +1,11 @@
 pandas
-streamlit==1.5.0
+streamlit
 scipy
-seaborn==0.10.0
+seaborn
 statsmodels
 lmfit
-npTDMS==0.27.0
+npTDMS
 simplejson
-bokeh==2.0.0
-altair==4.1.0
+bokeh
+altair
 lumicks.pylake
