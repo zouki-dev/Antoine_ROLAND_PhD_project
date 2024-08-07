@@ -25,7 +25,7 @@ import numpy as np
 folderProject = 'S:/projects/Luca/dmMBP'
 
 def wlc_manual_fit(folderProject=folderProject):
-    st.set_option('deprecation.showPyplotGlobalUse', False)
+    # st.set_option('deprecation.showPyplotGlobalUse', False)
     folderData = folderProject + "/csv_raw_data"
     folderSave = folderProject + "/wlc_manual_fit"
     rulersDefault = [0.0, 120]
