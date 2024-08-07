@@ -1,7 +1,7 @@
 pandas
 streamlit
 scipy
-seaborn==0.10.0
+seaborn
 statsmodels
 lmfit
 npTDMS==0.27.0
