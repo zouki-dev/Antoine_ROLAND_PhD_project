@@ -9,3 +9,4 @@ simplejson
 bokeh
 altair
 lumicks.pylake
+setuptools
