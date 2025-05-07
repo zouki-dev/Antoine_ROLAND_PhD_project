@@ -22,7 +22,7 @@ from plot_preview import plot_preview
 from rescue_function.assign_all_region import assign_all_regions
 
 def main(folderLocal="D:/projects", folderTeam="Data"):
-    f = open(os.path.dirname(__file__).replace("\\","/")+"./"+"folderProject.txt", "r")
+    f = "./"+"folderProject.txt", "r")
     folderProject = f.read()
     f.close()
 
