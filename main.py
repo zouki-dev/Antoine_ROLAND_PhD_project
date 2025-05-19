@@ -22,7 +22,7 @@ from plot_preview import plot_preview
 from rescue_function.assign_all_region import assign_all_regions
 
 def main(folderLocal="D:/projects", folderTeam="Data"):
-    f = "./"+"folderProject.txt", "r")
+    f = open("./folderProject.txt")
     folderProject = f.read()
     f.close()
 
